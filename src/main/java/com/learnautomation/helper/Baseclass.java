@@ -19,17 +19,17 @@ public  class Baseclass
   	public WebDriver driver;
   	
 
-	@BeforeMethod
+	@BeforeClass
 	public void setupbrowser()
 	{ 
 		System.out.println("Log:info-Before method");
 		System.out.println("Log:info-browser getting started");
-	    driver=Browserfactory.startbrowser(Config_reader.getproperty("Browsername"), Config_reader.getproperty("New_use_url"));
+	    driver=Browserfactory.startbrowser(Config_reader.getproperty("Browsername"), Config_reader.getproperty("MMT_Reg_url"));
 		System.out.println("Log:info-browser started");
 		
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void Closebrowser()
 	{
 		System.out.println("Log:info-After method");
