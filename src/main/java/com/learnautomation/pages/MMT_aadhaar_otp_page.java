@@ -1,11 +1,17 @@
 package com.learnautomation.pages;
 
+import java.awt.event.ActionEvent;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.reactivex.rxjava3.functions.Action;
 
 public class MMT_aadhaar_otp_page {
 	public WebDriver driver;
@@ -22,16 +28,15 @@ public class MMT_aadhaar_otp_page {
 	private By Continue=By.xpath("//button[contains(text(),'Continue')]");
 	
 	//methods
-	public  void enteraadhaarotp(String otp, String sharecode)
+	public  void enteraadhaarotp(String otp, String sharecode) throws InterruptedException
 	{
 		driver.findElement(A_otp).sendKeys(otp);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(Continue)).click();
 		driver.findElement(S_code).sendKeys(sharecode);
-		driver.findElement(S_code).clear();
-        driver.findElement(S_code).sendKeys(sharecode);
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(Continue));
-		driver.findElement(Continue).click();
-		
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.elementToBeClickable(Continue)).click();
+
 	}
 }
 

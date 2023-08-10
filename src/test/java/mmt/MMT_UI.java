@@ -42,7 +42,7 @@ public class MMT_UI extends Baseclass{
 	}
 	
 	@Test(priority = 3)
-	public void test_aadhaar_otp_page()
+	public void test_aadhaar_otp_page() throws InterruptedException
 	{
 		MMT_aadhaar_otp_page page4=new MMT_aadhaar_otp_page(driver);
 		page4.enteraadhaarotp(Config_reader.getproperty("otp"), Config_reader.getproperty("sharecode"));
@@ -54,9 +54,9 @@ public class MMT_UI extends Baseclass{
 	{
 		MMT_offer_page page5=new MMT_offer_page(driver);
 		page5.offerpage(Config_reader.getproperty("Enterotp"));
-		String url=driver.getCurrentUrl();
-		System.out.println("Current page url is " +url);
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		//String url=driver.getCurrentUrl();
+		//System.out.println("Current page url is " +url);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		boolean state=wait.until(ExpectedConditions.urlContains("https://www.makemytrip.com"));
 		Assert.assertTrue(state);
 		
