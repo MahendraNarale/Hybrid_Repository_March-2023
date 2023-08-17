@@ -3,6 +3,7 @@ package com.learnautomation.pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,7 +27,9 @@ public WebDriver driver;
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(offerotp)).sendKeys(Enterotp);	
-		wait.until(ExpectedConditions.elementToBeClickable(accept)).click();;
+		JavascriptExecutor exe= (JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].click();", accept);
+		//wait.until(ExpectedConditions.elementToBeClickable(accept)).click();;
 	}
 }
 	
