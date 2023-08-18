@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mmt.MMT_UI">
+      <class name="api_Automation.API">
         <methods>
-          <include name="test_aadhaar_page"/>
-          <include name="test_mmt_offer_page"/>
-          <include name="setupbrowser"/>
-          <include name="Closebrowser"/>
-          <include name="test_aadhaar_otp_page"/>
+          <include name="testgetAPI"/>
         </methods>
-      </class> <!-- mmt.MMT_UI -->
+      </class> <!-- api_Automation.API -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
