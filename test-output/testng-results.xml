@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T16:18:48 IST" name="Default suite" finished-at="2023-08-17T16:18:52 IST" duration-ms="3935">
+  <suite started-at="2023-08-18T18:09:26 IST" name="Suite" finished-at="2023-08-18T18:10:17 IST" duration-ms="51594">
     <groups>
     </groups>
-    <test started-at="2023-08-17T16:18:48 IST" name="Default test" finished-at="2023-08-17T16:18:52 IST" duration-ms="3935">
-      <class name="api_Automation.API">
-        <test-method signature="testresponse()[pri:0, instance:api_Automation.API@5acf93bb]" started-at="2023-08-17T16:18:48 IST" name="testresponse" finished-at="2023-08-17T16:18:52 IST" duration-ms="3849" status="PASS">
+    <test started-at="2023-08-18T18:09:26 IST" name="Test" finished-at="2023-08-18T18:10:17 IST" duration-ms="51594">
+      <class name="mmt.MMT_UI">
+        <test-method is-config="true" signature="setupbrowser()[pri:0, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:26 IST" name="setupbrowser" finished-at="2023-08-18T18:09:37 IST" duration-ms="11028" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testresponse -->
-      </class> <!-- api_Automation.API -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setupbrowser -->
+        <test-method signature="test_home_page()[pri:0, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:37 IST" name="test_home_page" finished-at="2023-08-18T18:09:37 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_home_page -->
+        <test-method signature="test_pan_dob_page()[pri:1, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:37 IST" name="test_pan_dob_page" finished-at="2023-08-18T18:09:39 IST" duration-ms="2342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_pan_dob_page -->
+        <test-method signature="test_aadhaar_page()[pri:2, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:39 IST" name="test_aadhaar_page" finished-at="2023-08-18T18:09:55 IST" duration-ms="15711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_aadhaar_page -->
+        <test-method signature="test_aadhaar_otp_page()[pri:3, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:55 IST" name="test_aadhaar_otp_page" finished-at="2023-08-18T18:09:57 IST" duration-ms="2230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_aadhaar_otp_page -->
+        <test-method signature="test_mmt_offer_page()[pri:4, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:09:57 IST" name="test_mmt_offer_page" finished-at="2023-08-18T18:10:16 IST" duration-ms="19069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_mmt_offer_page -->
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:mmt.MMT_UI@51e69659]" started-at="2023-08-18T18:10:16 IST" name="Closebrowser" finished-at="2023-08-18T18:10:17 IST" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+      </class> <!-- mmt.MMT_UI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

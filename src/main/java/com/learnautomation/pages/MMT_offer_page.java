@@ -27,9 +27,10 @@ public WebDriver driver;
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(offerotp)).sendKeys(Enterotp);	
-		JavascriptExecutor exe= (JavascriptExecutor) driver;
+		/*JavascriptExecutor exe= (JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].click();", accept);
-		//wait.until(ExpectedConditions.elementToBeClickable(accept)).click();;
+		*/
+		wait.until(ExpectedConditions.elementToBeClickable(accept)).click();;
 	}
 }
 	
