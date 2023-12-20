@@ -59,7 +59,7 @@ public class MMT_UI extends Baseclass{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		boolean state=wait.until(ExpectedConditions.urlContains("https://www.makemytrip.com"));
 		Assert.assertTrue(state);
-		Assert.assertTrue(state);
+		
 		
 	}
 
