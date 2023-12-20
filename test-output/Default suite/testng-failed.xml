@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api_Automation.POST_API">
+      <class name="mmt.MMT_UI">
         <methods>
-          <include name="Post_call"/>
+          <include name="test_mmt_offer_page"/>
+          <include name="setupbrowser"/>
+          <include name="Closebrowser"/>
         </methods>
-      </class> <!-- api_Automation.POST_API -->
+      </class> <!-- mmt.MMT_UI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
